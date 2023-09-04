@@ -9,7 +9,7 @@ public class ApiLevelChecker
         CheckLevel();
     }
 
-    public static void CheckLevel()
+    private static void CheckLevel()
     {
         var currentApi = PlayerSettings.GetApiCompatibilityLevel(UnityEditor.Build.NamedBuildTarget.Standalone);
         var targetApi = ApiCompatibilityLevel.NET_Unity_4_8;
